@@ -1,23 +1,31 @@
-
+/* Text */
+h1, h2, h3 , h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+  p {
+    font-family: 'Poppins', sans-serif;
+  }
  /*Navigation*/
 
-.primaryNav {
+.jumbotron {
     display: grid;
     grid-template-columns: 35% 65%;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 300px 125px 125px;
     grid-template-areas:
-        "logo navBar"
-        "heroProject heroProject";
+        "logo navbar"
+        "lead lead"
+        "lead-Sub lead-Sub";
     margin: 0px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,012840+84,012840+84&0+0,0.9+100;TSW */
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(1,40,64,0.76) 84%, rgba(1,40,64,0.9) 100%),url(../images-folder/recess_hero.jpg); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 84%,rgba(1,40,64,0.9) 100%),url(../images-folder/recess_hero.jpg); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 84%,rgba(1,40,64,0.9) 100%),url(../images-folder/recess_hero.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(1,40,64,0.76) 86%, rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6012840',GradientType=0 ); /* IE6-9 */   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 80vh;
+
 }
 #logo {
     grid-area: logo;
@@ -32,97 +40,115 @@
     transition: transform .3s;
 }
 
-.navBar {
+.navbar-nav {
     display: flex;
-    grid-area: navBar;
+    grid-area: navbar;
     justify-content: space-between;
     font-size: 25px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     color: white;
-    margin-right: 10%;
+    margin-right: 3%;
+    margin-left: 0 auto;
     align-items: center;
     justify-content: space-between;
     padding: 1%;
     border-bottom: 3px solid transparent;
-}
-a {
-    color: white;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
+    list-style-type: none;
 }
 
-.navBar a:hover {
-    border-bottom: 3px solid #187AA5;
+.nav-link {
+    color: white !important;
+    text-decoration: none;
+    border-bottom: 5px solid transparent;
+}
+
+.nav-link a:hover {
+    border-bottom: 5px solid #187AA5 !important;
     transition: 0.3s;
 }
 a:active {
     color: white;
-    border-bottom: 3px solid #187AA5;
+    border-bottom: 5px solid #187AA5;
 }
 
-.heroProject {
+.lead {
+    display: grid;
+    margin-left: 8%;
+    margin-right: 0 auto;
+    grid-area: lead;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 85%;
+    margin-top: 5%;
+}
+.lead-Sub {
+    display: grid;
+    grid-area: lead-Sub;
+    margin-left: 8%;
+    margin-right: 0 auto;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/*Problem & Solution Cards*/
+
+.container-fluid {
+    width: 100%;
     margin-left: 5%;
-    grid-area: heroProject;
-    padding: 3%;
-    color: white;
-    width: 85%;
-    margin-top: 5%;
+    margin-right: 0 auto;
+    padding: 5%;
+    flex-direction: row;
+    border: none !important;
 }
-.heroProject h3 {
-    color: white;
-    font-weight: 700px;
-}
-
-/*Studios*/
-
 .problem {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 300px;
-    grid-template-areas:
-        "problemTitle problemTitle"
-        "problemText problemText2";
-    grid-gap: 3%;
+    display: flex;
+    justify-content: space-between;
     width: 85%;
     text-align: left;
-    font-weight: 700;
-    margin-left: 8%;
+    font-weight: 300;
     margin-top: 5%;
+    margin-right: 0 auto;
+    border: none !important;
 }
-#problemTitle {
-    display: grid;
-    grid-area: problemTitle;
+.problem h2 {
     color: #187AA5;
 }
+.cardContainer {
+    border: none !important;
+}
 
-.users{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 300px;
-    grid-template-areas:
-        "personaImage userTitle"
-        "personaImage userText";
-    grid-gap: 3%;
+.pandemic {
+    display: flex;
+    justify-content: space-between;
     width: 85%;
-    text-align: left;
-    font-weight: 700;
-    margin-left: 8%;
-}
-#userTitle {
-    display: grid;
-    grid-area: userTitle;
-    color: #187AA5;
-}
-#userText {
-    grid-area: userText;
 }
 
-#personaImage {
-    grid-area: personaImage;
-    background-image: url(../images-folder/persona.jpg);
+/*Large Central Image*/
+
+.jumbotron-central {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,012840+84,012840+84&0+0,0.9+100;TSW */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(1,40,64,0.76) 86%, rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6012840',GradientType=0 ); /* IE6-9 */   
+    background-repeat: no-repeat;
     background-size: cover;
-    margin-left:3%;
+    background-position: center;
+    height: 60vh;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.title {
+    color: white;
+    font-weight: 700px !important;
+    align-items: start;
+    justify-content: end;
 }
 
 /**Process**/
