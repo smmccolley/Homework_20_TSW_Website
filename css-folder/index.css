@@ -5,26 +5,27 @@ h1, h2, h3 , h4, h5, h6 {
   p {
     font-family: 'Poppins', sans-serif;
   }
+  
  /*Navigation*/
 
 .jumbotron {
     display: grid;
     grid-template-columns: 35% 65%;
-    grid-template-rows: 300px 125px 125px;
+    grid-template-rows: 400px 125px 125px;
     grid-template-areas:
         "logo navbar"
         "lead lead"
         "lead-Sub lead-Sub";
     margin: 0px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,012840+84,012840+84&0+0,0.9+100;TSW */
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(1,40,64,0.76) 86%, rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(1,40,64,0.76) 86%, rgba(1,40,64,0.9) 100%),url(../images-folder/nrv_park.jpg); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/nrv_park.jpg); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/nrv_park.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6012840',GradientType=0 ); /* IE6-9 */   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 90vh;
 
 }
 #logo {
@@ -53,24 +54,29 @@ h1, h2, h3 , h4, h5, h6 {
     align-items: center;
     justify-content: space-between;
     padding: 1%;
-    border-bottom: 3px solid transparent;
     list-style-type: none;
+}
+.navbar-nav :hover {
+    border-bottom: 5px solid #187AA5 !important;
 }
 
 .nav-link {
     color: white !important;
-    text-decoration: none;
+    text-decoration: none ;
     border-bottom: 5px solid transparent;
+    padding: 1%;
 }
 
-.nav-link a:hover {
+.nav-link :hover {
     border-bottom: 5px solid #187AA5 !important;
-    transition: 0.3s;
+    transition: 0.3s !important;
+    padding: 1%;
 }
-a:active {
+a :active {
     color: white;
     border-bottom: 5px solid #187AA5;
 }
+
 
 .lead {
     display: grid;
@@ -82,7 +88,8 @@ a:active {
     font-family: 'Poppins', sans-serif;
     color: white;
     width: 85%;
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 .lead-Sub {
     display: grid;
@@ -93,6 +100,33 @@ a:active {
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     color: white;
+}
+
+/*Large Central Image*/
+
+.jumbotron-central {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,012840+84,012840+84&0+0,0.9+100;TSW */
+    display: flex;
+    align-items: flex-end;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(1,40,64,0.76) 86%, rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6012840',GradientType=0 ); /* IE6-9 */   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3%;
+
+}
+.title {
+    display: flex;
+    color: white;
+    font-size: 25px;
+    align-items: flex-end;
+    margin-left: -12%;
 }
 
 /*Problem & Solution Cards*/
@@ -111,15 +145,11 @@ a:active {
     width: 85%;
     text-align: left;
     font-weight: 300;
-    margin-top: 5%;
     margin-right: 0 auto;
     border: none !important;
 }
 .problem h2 {
     color: #187AA5;
-}
-.cardContainer {
-    border: none !important;
 }
 
 .pandemic {
@@ -127,32 +157,78 @@ a:active {
     justify-content: space-between;
     width: 85%;
 }
-
-/*Large Central Image*/
-
-.jumbotron-central {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,012840+84,012840+84&0+0,0.9+100;TSW */
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(1,40,64,0.76) 86%, rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/ssne_kickoff.JPG); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6012840',GradientType=0 ); /* IE6-9 */   
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
+.card {
+    border: none;
+}
+.card-title-values {
+    color: #187AA5;
+}
+.card-funnel {
+    display: flex;
     margin-left: 5%;
-    margin-right: 5%;
-
 }
-.title {
+
+/**Vision Statement**/
+.card-body-vision {
+    display: flex;
+    flex-grow: 1;
     color: white;
-    font-weight: 700px !important;
-    align-items: start;
-    justify-content: end;
+    background-color: #187AA5;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+    width: 85%;
+    margin-left: 5%;
+    margin-right: 0 auto;
+    border: 0 !important;
 }
 
-/**Process**/
 
+/**Goals**/
+.card-body-goals {
+    display: flex;
+    color:black;
+    font-weight: 900px !important;
+    align-items: center;
+    text-align: left;
+    height: 500px;
+    padding: 3%;
+    margin-left: 5%;
+    margin-right: 0 auto;
+    border: 0 !important;
+}
+.card-body-5goals {
+    display: flex;
+    color:black;
+    align-items: center;
+    text-align: left;
+    height: 500px;
+    padding: 3%;
+    margin-left: 5%;
+    margin-right: 0 auto;
+    border: 0 !important;
+}
+.goalsSentence {
+    border-right: #187AA5, 3px, solid, !important;
+}
+.card-body-goals {
+    border-right: #187AA5, 3px, solid, !important;
+    margin-left: 10%;
+}
+
+/**Chattahoochee Statement**/
+.chattahoochee {
+    display: flex;
+    margin-right: 0 auto;
+}
+.chattahoochee-text {
+    margin-left: 5%;
+    width: 85%;
+}
+.card-chatt-title {
+    color: #187AA5;
+}
 .affinityThemes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
