@@ -10,13 +10,13 @@ h1, h2, h3 , h4, h5, h6 {
 
 .jumbotron {
     display: grid;
-    grid-template-columns: 35% 65%;
-    grid-template-rows: 400px 125px 125px;
+    grid-template-columns: 35% 64%;
+    grid-template-rows: 400px 115px 115px;
     grid-template-areas:
         "logo navbar"
         "lead lead"
         "lead-Sub lead-Sub";
-    margin: 0px;
+    margin: 0px auto;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,012840+84,012840+84&0+0,0.9+100;TSW */
     background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(1,40,64,0.76) 86%, rgba(1,40,64,0.9) 100%),url(../images-folder/nrv_park.jpg); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(1,40,64,0.76) 86%,rgba(1,40,64,0.9) 100%),url(../images-folder/nrv_park.jpg); /* Chrome10-25,Safari5.1-6 */
@@ -88,8 +88,7 @@ a :active {
     font-family: 'Poppins', sans-serif;
     color: white;
     width: 85%;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: -5%;
 }
 .lead-Sub {
     display: grid;
@@ -100,6 +99,7 @@ a :active {
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     color: white;
+    margin-top: -5%;
 }
 
 /*Large Central Image*/
@@ -126,7 +126,7 @@ a :active {
     color: white;
     font-size: 25px;
     align-items: flex-end;
-    margin-left: -12%;
+    margin-left: 3%;
 }
 
 /*Problem & Solution Cards*/
@@ -172,8 +172,7 @@ a :active {
 .card-body-vision {
     display: flex;
     flex-grow: 1;
-    color: white;
-    background-color: #187AA5;
+    color: black;
     font-style: italic;
     align-items: center;
     text-align: center;
@@ -181,9 +180,10 @@ a :active {
     width: 85%;
     margin-left: 5%;
     margin-right: 0 auto;
-    border: 0 !important;
+    border: 5px solid;
+    border-color: #187AA5;
+    margin-top: -5%;
 }
-
 
 /**Goals**/
 .card-body-goals {
@@ -210,251 +210,143 @@ a :active {
     border: 0 !important;
 }
 .goalsSentence {
-    border-right: #187AA5, 3px, solid, !important;
+    margin-left: 5%;
 }
 .card-body-goals {
     border-right: #187AA5, 3px, solid, !important;
     margin-left: 10%;
 }
 
+.border-right {
+    border-right-color: #187AA5 !important;
+    border-right: #187AA5 4px solid !important;
+
+}
+
 /**Chattahoochee Statement**/
 .chattahoochee {
     display: flex;
     margin-right: 0 auto;
+    margin-top: -5%;
 }
 .chattahoochee-text {
     margin-left: 5%;
+    padding: 3%;
     width: 85%;
 }
 .card-chatt-title {
     color: #187AA5;
 }
-.affinityThemes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 550px;
-    grid-template-areas:
-        "themes themes themes";  
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 3%;
-}
 
-#themes {
-    grid-area: themes;
-    background-image: url(../images-folder/recess_common_themes.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.recessPunTitle {
-    grid-area: recessPun;
-    margin-left: 15%;
-    color: #187AA5;
-    margin-top: 5%;
-}
-.recessPun {
-    font-weight: 700;
-    width: 75%;
-}
-#recessDescSubtitle {
-    font-weight: 700;
-    width: 75%;
-}
-#recessDescText {
-    font-weight: 200px;
-    width: 75%;
-}
+/*Carousel*/
 
-/*PROTOTYPES*/
-
-.prototypes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px;
-    grid-gap: 3%;
-    grid-template-areas:
-        "sketches midfidelity highfidelity";
-    margin-right: 3%;
+.bd-example {
+    margin-top: -1%;
+}
+.carousel-inner {
     margin-left: 3%;
-    margin-top: 10%;
-    margin-bottom: 5%;
-}
-
-#sketches {
-    grid-area: sketches;
-    background-image: url(../images-folder/recess_sketches.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-left: 15%;
-}
-
-#midfidelity {
-    grid-area: midfidelity;
-    background-image: url(../images-folder/recess_midfi.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: #187AA5;
-    align-content: end;
-    justify-content: end;
-}
-
-#highfidelity {
-    grid-area: highfidelity;
-    background-image: url(../images-folder/recess_highfi.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: #187AA5;
-    align-content: end;
-    justify-content: end;
-}
-#sketchesTitle {
-    font-weight: 700;
-    color: black;
-    font-size: 16px;
-    text-align: right;
-}
-
-#sketchesText {
-    font-weight: 300;
-    color: black;
-    font-size: 16px;
-    text-align: right;
-
-}
-
-#midfiTitle {
-    font-weight: 700;
-    color: black;
-    font-size: 16px;
-    text-align: right;
-}
-
-#midfiText {
-    font-weight: 300;
-    color: black;
-    font-size: 16px;
-    text-align: right;
-}
-
-#highfiTitle {
-    font-weight: 700;
-    color: black;
-    font-size: 16px;
-    text-align: right;
-}
-
-#highfiText {
-    font-weight: 300;
-    color: black;
-    font-size: 16px;
-    text-align: right;
-}
-
-/**RESULTS OF CASE STUDY**/
-
-.parksandRecTitle {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px;
-    grid-template-areas: 
-        "parksAndRec";
-    margin-left: 55%;
-    color: #187AA5;
     margin-right: 5%;
+    width: 95%;
+    height: 100vh;
+    
 }
 
-.results {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 300px 50px 50px;
-    grid-template-areas:
-        "resultsDesc appGrid"
-        "linkPrototype appGrid"
-        "linkCaseStudy appGrid";
-    margin-left: 15%;
-    grid-gap: 3%;
-    margin-bottom: 5%;
-    margin-right: 3%;
-}
-
-#appGrid {
-    grid-area: appGrid;
-    background-image: url(../images-folder/recess_grid.png);
-    background-size: cover;
-}
-
-#resultsDesc {
-    font-weight: 300px;
-}
-
-#linkPrototype {
-    font-weight: 900;
-    text-decoration: underline;
-    border-color: none;
-    border-style: none;
-    background-color: transparent;
-    text-align: left;
-}
-
-#linkCaseStudy {
-    font-weight: 900;
-    text-decoration: underline;
-    border-color: none;
-    border-style: none;
-    background-color: transparent;
-    text-align: left;
-
-}
-            
-            
-/*Footer*/
-.footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 300px;
-    grid-gap: 6%;
-    grid-template-areas:
-        "sayHello sayHello"
-        "footerLeft footerRight";
-    background-color: #187AA5;
-    margin-top: 3%;
-    margin-right: 3%;
+.carousel-item {
     margin-left: 3%;
+    margin-right: 5%;
+    width: 95%;
+    height: 100vh;
+}
+
+/*Main Point*/
+.card-body-balance {
+    display: flex;
+    width: 85%;
+    margin-right: 0 auto;
+    color: #187AA5;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+.mainpoint {
+    margin-top: -5%;
+}
+#mp-emphasis {
+    font-weight: 700;
+
+}
+
+.card-infographic {
+    display: flex;
+    flex-grow: 1;
+    background: url(../images-folder/mainpoint-copy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3%;
+    width: 100%;
+    height: 65vh;
+}
+.card-body-mainpoint {
+    padding: 3%;
+    justify-content: center;
+}
+
+/**FOOTER**/
+.footer {
+    display: grid;
+    grid-template-rows: 100px 200px;
+    background-color: #187AA5;
+    width: 100%;
+    margin-left: -1%;
+    height: 80vh;
+}
+.card-footer {
+    background-color: transparent;
+    border: none;
+    margin-left: 5%;
+    background-color: #187AA5;
+}
+
+.card-body-footer1 {
+    padding: 3%;
+    ;
+    color: white;
+}
+.card-body-footer2 {
+    padding: 3%;
+    color: white;
 }
 .sayHello {
-    grid-area: sayHello;
     font-weight: 700px;
     color: #C1D959;
-    margin-left: 9%;
     padding: 3%;
-    margin-bottom: 5%;
+    margin-top: -3%;
+    margin-left: 3%;
 }
-.footerLeft {
-    grid-area: footerLeft;
-    margin-left: 25%;
-    margin-top: 5%;
-    color: white;
-}
-
-.footerRight {
-    grid-area: footerRight;
-    margin-top: 5%;
-}
-.team {
-    font-weight: 700;
-    color: white;
-}
-.designTeam {
-    color: white;
-    width: 500px;
-}
-.whitePrimary {
-    font-weight: 200;
+.btn-primary {
+    font-weight: 300;
+    font-family: Poppins;
     border: 1.5px solid white;
     background-color: transparent;
     color: white;
-    width: 200px;
-}
+    width: 50%;
+    border-radius: 0,0,0,0 !important;
+    padding: 3%;
+} 
+
+.btn-primary:hover {
+    font-weight: 300;
+    font-family: Poppins;
+    border: 1.5px solid white;
+    background-color: white !important;
+    color: #187AA5 !important;
+    width: 50% !important;
+    border-radius: 0,0,0,0 !important;
+    padding: 3%;
+} 
+
+            
+
 /* Typography CSS */
 
 h1 {
